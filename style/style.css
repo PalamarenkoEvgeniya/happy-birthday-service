@@ -49,6 +49,12 @@ button {
   cursor: pointer;
 }
 
+button:hover,
+button:focus,
+button:active {
+  opacity: 0.5;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -92,7 +98,7 @@ img {
 
 .header__button-change {
   width: 300px;
-  height: 65px; 
+  height: 65px;
   border: none;
   border-radius: 30px;
   font-size: 18px;
@@ -106,7 +112,7 @@ img {
 }
 
 .men .header__button-change {
-  background-color: #1178B2;
+  background-color: #1178b2;
 }
 
 .header__button-change:not(:last-child) {
@@ -138,11 +144,11 @@ img {
 }
 
 .men .header__button-gender--men {
-  border-color: #1178B2;
+  border-color: #1178b2;
 }
 
 .women .header__button-gender--women {
-  border-color: #C300C7;
+  border-color: #c300c7;
 }
 
 .card__container {
@@ -200,17 +206,37 @@ img {
   font-family: inherit;
 }
 
+.footer__link--designer,
+.footer__link--coder {
+  border-bottom: 1px solid transparent;
+}
+
+.footer__link--designer:hover,
+.footer__link--coder:hover,
+.footer__link--designer:active,
+.footer__link--coder:active,
+.footer__link--designer:focus,
+.footer__link--coder:focus {
+  border-bottom: 1px solid #000000;
+}
+
 .footer__social {
   display: flex;
   gap: 16px;
 }
 
+.footer__link:hover,
+.footer__link:active,
+.footer__link:focus {
+  opacity: 0.5;
+}
+
 .women .footer__link {
-  color: #C300C7;
+  color: #c300c7;
 }
 
 .men .footer__link {
-  color: #1178B2;
+  color: #1178b2;
 }
 
 @media (max-width: 880px) {
