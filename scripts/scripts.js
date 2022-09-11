@@ -24,7 +24,7 @@ const renderDOM = () => {
     cardText.style.color = '';
   }
 
-  cardImage.src = `../images/${state.photo}`;
+  cardImage.src = `./images/${state.photo}`;
   cardText.innerHTML = state.text.replaceAll('\n', '<br>');
 }
 
